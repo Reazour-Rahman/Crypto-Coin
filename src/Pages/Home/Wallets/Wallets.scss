@@ -1,0 +1,83 @@
+.wallet-container{
+    margin-top: 132px;
+}
+.wallet-text{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0E133A;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.wallet-card-container{
+
+}
+.card{
+    height: 462px;
+    position: relative;
+    z-index: 100;
+    border-radius: 15px !important;
+}
+.wallet-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.wallet-card-des{
+    margin: 25px 0px 20px 0px;
+    color: #FFFFFF;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 28px;
+}
+
+.wallet-card-icons > *{
+    color: #FFFFFF;
+}
+.chose-wallet{
+    height: 62px;
+    width: 218px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    border-top-right-radius: 31.5px;
+    border-bottom-right-radius: 31.5px;
+    // background-color: #0C20CB;
+    // padding: 0px 0px 40px 40px;
+    padding-left: 40px;
+}
+
+/* Background Rectangle  */
+.rectangle1{
+    // background-color: #0C20CB;
+    position: absolute;
+    height: 110px;
+    width: 50%;
+    right: 0;
+    top: 0;
+    border-top-left-radius: 56px;
+    border-bottom-left-radius: 56px;
+    border-top-right-radius: 15px;
+    z-index: -1;
+}
+.rectangle2{
+    // background-color: #0C20CB;
+    position: absolute;
+    height: 75px;
+    width: 20%;
+    right: 0;
+    bottom: 25%;
+    border-top-left-radius: 56px;
+    border-bottom-left-radius: 56px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+    .wallet-container{
+        margin-top: 70px;
+    }
+    .wallet-text{
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+}

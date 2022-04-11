@@ -1,0 +1,148 @@
+.guide-container{
+    margin-top: 152px;
+}
+
+.guide-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0E133A;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Steps of guide as scss format */
+.guide-steps-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px;
+
+    /* Steps */
+     .step{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 28px;
+
+        /* Steps image */
+        img{
+            height: 160px;
+            width: 160px;
+            background-color: #FFD456;
+            border-radius: 50%;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p{
+                &:first-child{
+                    color: #0E133A;
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                &:last-child{
+                    color: #5B5D6D;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    
+
+}
+/* Responsiveness */
+@media only screen and (max-width: 995px) {
+    .guide-steps-container{
+        grid-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 778px) {
+    .guide-container{
+        margin-top: 80px;
+    }
+    
+    .guide-title{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .guide-steps-container{
+        grid-gap: 10px;
+        .step{
+
+            gap: 18px;
+    
+            /* Steps image */
+            img{
+                height: 100px;
+                width: 100px;
+            }
+            div{
+                
+                p{
+                    &:first-child{
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                    }
+                    &:last-child{
+                        font-size: 10px;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .guide-container{
+        margin-top: 70px;
+    }
+    
+    .guide-title{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .guide-steps-container{
+
+        .step{
+
+            gap: 15px;
+    
+            /* Steps image */
+            img{
+                height: 80px;
+                width: 80px;
+            }
+            div{
+                
+                p{
+                    &:first-child{
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+                    &:last-child{
+                        font-size: 10px;
+                    }
+                }
+            } 
+        }
+    }
+}
+@media only screen and (max-width: 427px) {
+    .guide-container{
+        margin-top: 60px;
+    }
+    
+    .guide-title{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .guide-steps-container{
+        .step{
+            gap: 5px;
+        }
+    }
+}

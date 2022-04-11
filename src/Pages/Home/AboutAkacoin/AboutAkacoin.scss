@@ -1,0 +1,72 @@
+
+.about-aka{
+    background-color: #1F33D8;
+    margin-top: 122px;
+    border-bottom: 11px solid #FFD456;
+}
+
+.activities-container > *{
+    color: #FFFFFF;
+}
+.activities-container{
+    padding: 40px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    div p:first-child{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    div p:last-child{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .activities-container{
+        div p:last-child{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }    
+}
+@media only screen and (max-width: 765px) {
+    .about-aka{
+        margin-top: 52px;
+    }
+    .activities-container{
+        div p:first-child{
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        div p:last-child{
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        // .onhide{
+        //     display: ;
+        // }
+    }    
+}
+@media only screen and (max-width: 521px) {
+    .activities-container{
+        div p:first-child{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        div p:last-child{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        .on-hide{
+            display: none;
+        }
+    }    
+}

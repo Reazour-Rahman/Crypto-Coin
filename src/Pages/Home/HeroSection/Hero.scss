@@ -1,0 +1,273 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  section > * {
+    margin: 0px;
+  }
+}
+/* :::::::::::::::::::::::after
+Banner Paragraph
+::::::::::::::::::::::::::::::*/
+.hero-container section p:first-child {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-bottom: 11px;
+}
+.hero-container section p:nth-of-type(2) {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 95px;
+  color: #0e133a;
+  padding-bottom: 20px;
+}
+.hero-container section p:nth-of-type(3) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 72px;
+  color: #5b5d6d;
+}
+
+/* :::::::::::::::::::::::after
+Banner Buttons
+::::::::::::::::::::::::::::::*/
+.hero-button {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px !important;
+  padding: 16px 56px 16px 56px !important;
+  border: none !important;
+}
+
+.started {
+  background-color: #1f33d8 !important;
+  margin-right: 24px;
+}
+.started:hover {
+  transition-duration: 0.5s;
+  background-color: #0416b5 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.git {
+  background-color: white !important;
+  color: black !important;
+}
+.git:hover {
+  transition-duration: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  
+}
+
+.github-button {
+  display: flex;
+  align-items: center;
+}
+
+/* Bitcoin Tree */
+.photo img {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+.frame {
+  width: 591px;
+  height: 732px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Small coin 1 */
+.bitcoins1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.bitcoins1 img {
+  transform: rotate(-31.46deg);
+  width: 116px;
+  height: 116px;
+}
+/* Small coin 2 */
+.bitcoins2 {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  text-align: right;
+}
+.bitcoins2 img {
+  transform: rotate(-26.48deg);
+  width: 96px;
+  height: 96px;
+}
+
+/* Small coin 3 */
+.bitcoins3 {
+  position: absolute;
+  width: 100%;
+  //   top: 60px;
+  bottom: 40%;
+  vertical-align: text-bottom;
+}
+.bitcoins3 img {
+  filter: blur(1px);
+  transform: rotate(33.12deg);
+  width: 96px;
+  height: 96px;
+}
+
+/* Small coin 4 */
+.bitcoins4 {
+  position: absolute;
+  width: 100%;
+  bottom: 23%;
+  right: 14%;
+  text-align: right;
+  vertical-align: text-bottom;
+}
+.bitcoins4 img {
+  filter: blur(2px);
+  transform: rotate(17.39deg);
+  width: 96px;
+  height: 96px;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 1150px) {
+  .hero-container{
+    section{
+      .social-button{
+        display: flex;
+      }
+      .started {
+        margin-right: 12px;
+      }
+      .hero-button {
+        font-size: 15px;
+        padding: 12px 46px 12px 46px !important;
+      }
+      &:first-child{
+        p{
+          &:nth-of-type(2){
+            font-size: 52px;
+            line-height: 75px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+      .frame {
+        width: 100%;
+        height: 100%;
+      }
+      &:last-child{
+        .photo img {
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 995px) {
+  .hero-container{
+    padding-top: 30px;
+    section{
+      .started {
+        margin-right: 5px;
+      }
+      .hero-button {
+        padding: 12px 26px 12px 26px !important;
+      }
+      &:first-child{
+        p{
+          &:nth-of-type(2){
+            font-size: 52px;
+            line-height: 65px;
+          }
+          &:nth-of-type(3){
+            padding-bottom: 32px;
+          }
+        }
+      }
+      &:last-child{
+        .photo img {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .hero-container{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    section{
+      .social-button{
+        flex-direction: column;
+      }
+      .started {
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+      .hero-button {
+        padding: 12px 20px 12px 20px !important;
+      }
+      &:first-child{
+        p{
+          &:nth-of-type(2){
+            font-size: 32px;
+            line-height: 45px;
+          }
+          &:nth-of-type(3){
+            padding-bottom: 22px;
+          }
+        }
+      }
+      &:last-child{
+        .frame {
+          .bitcoins1{
+            
+            img{
+              width: 70px;
+              height: 70px;
+            }
+          }
+          .bitcoins2{
+
+            img{
+              width: 55px;
+              height: 55px;
+            }
+          }
+          .bitcoins3{
+            bottom: 30%;
+            img{
+              width: 55px;
+              height: 55px;
+            }
+
+          }
+          .bitcoins4{
+            bottom: 17%;
+            right: 7%;
+            img{
+              width: 55px;
+              height: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 590px) {
+  .hero-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,179 @@
+.akacoin-container {
+  margin-top: 56px;
+  padding: 0px;
+}
+
+.akacoin-container article > * {
+  margin: 0%;
+  padding: 0px;
+}
+
+/* Top, What is aka coin */
+.akacoin-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 44px;
+}
+
+/* Articles */
+.aka-coin-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aka-coin-community {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+/* Right side */
+.aka-coin-blockchain p:first-child {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.aka-coin-blockchain p:last-child span:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f33d8;
+  margin-right: 10px;
+}
+
+/* Video and Image */
+.aka-coin-video-image {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px;
+}
+
+/* Image */
+.aka-coin-video-image img {
+  height: 400px;
+}
+.aka-image-container {
+  background-color: #ffd556;
+  border-radius: 15px;
+}
+
+/* Video  */
+.video-size {
+  height: 400px !important;
+  border-radius: 15px !important;
+  background-size: cover;
+  overflow: hidden;
+  background-color: #f2f2f2 !important;
+}
+.video-js {
+  border-radius: 15px !important;
+}
+
+.vjs-poster {
+  border-radius: 15px !important;
+  background-color: #f2f2f2 !important;
+  width: 100%;
+}
+
+.video-js .vjs-big-play-button {
+  font-size: 60px !important;
+  margin-left: 30% !important;
+  width: 92px !important;
+  border-radius: 50% !important;
+  background-color: #1f33d8 !important;
+  border: none !important;
+}
+.video-js .vjs-big-play-button:hover {
+  background-color: #00109e !important;
+}
+
+/* Watch video button */
+.video-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 40%;
+  width: 264px;
+  background-color: #0c20cb;
+  border-radius: 0px 46.5px 46.5px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.bottom-left div p:first-child {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.bottom-left div p:last-child {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Responsiveness*/
+@media only screen and (max-width: 1000px) {
+  .akacoin-title {
+    font-size: 38px;
+    margin-bottom: 34px;
+  }
+  .aka-coin-community {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .aka-image-container img {
+    height: 300px !important;
+  }
+  .video-size {
+    height: 300px !important;
+  }
+  .video-js .vjs-big-play-button {
+    font-size: 40px !important;
+    margin-left: 15% !important;
+    width: 62px !important;
+  }
+  .bottom-left {
+    width: 170px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .bottom-left div p:first-child {
+    text-align: start;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .bottom-left div p:last-child {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aka-coin-video-image {
+    grid-gap: 20px;
+  }
+  .aka-image-container img {
+    height: 250px !important;
+  }
+  .video-size {
+    height: 250px !important;
+  }
+}
+@media only screen and (max-width: 513px) {
+  .aka-coin-intro {
+    flex-direction: column;
+  }
+  .aka-coin-video-image {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
